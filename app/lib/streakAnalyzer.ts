@@ -445,6 +445,7 @@ export function calculateFirstRecovery(
   firstRecoveryDays: number | null;
   firstRecoveryPercent: number | null;
   recoveryDate: string | null;
+  recoveryPrice: number | null;
 } {
   if (!streak || streak.startIndex >= closePrices.length || streak.startIndex < 0) {
     return {
