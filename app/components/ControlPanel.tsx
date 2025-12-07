@@ -25,7 +25,7 @@ export default function ControlPanel({
 }: ControlPanelProps) {
   const numericFields = getNumericFields(rows, columns);
 
-  const handleFieldChange = (field: keyof ChartConfig, value: string) => {
+  const handleFieldChange = (field: keyof ChartConfig, value: string | undefined) => {
     onConfigChange({
       ...config,
       [field]: value,
